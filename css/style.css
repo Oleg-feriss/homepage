@@ -531,7 +531,7 @@ article {
   border-top: 1px solid rgba(222, 222, 222, 1);
 }
 .divider.fat {
-  border-top: 0.3571428571428571em solid rgba(10, 10, 10, 1);
+  border-top: 0.3571428571428571em solid rgb(216, 76, 21);
   width: 33%;
 }
 
@@ -600,7 +600,7 @@ article {
   color: dimgrey;
 }
 .contacts li a.mail:hover {
-  color: dimgrey;
+  color: rgb(233, 13, 13);
 }
 .contacts li a.skype:hover {
   color: #00aff0;
@@ -613,6 +613,9 @@ article {
 }
 .contacts li a.phone:hover {
   color: dimgrey;
+}
+.contacts li a.instagram:hover {
+  color: rgb(219, 61, 21);
 }
 .contacts li a.website {
   display: none;
