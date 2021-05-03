@@ -1088,3 +1088,21 @@ footer a {
     margin-bottom: 0;
   }
 }
+
+main {
+  background: linear-gradient(-45deg, #ee7752, #a13434, #b4a734, #d6772a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
