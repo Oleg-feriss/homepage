@@ -765,6 +765,10 @@ li.bordered > ul > details > div {
   margin-right: -0.5em;
 }
 
+.enemies li {
+  padding-top: 1rem;
+}
+
 /* Timeline */
 .timeline {
   list-style: none outside none;
