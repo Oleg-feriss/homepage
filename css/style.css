@@ -765,10 +765,6 @@ li.bordered > ul > details > div {
   margin-right: -0.5em;
 }
 
-.enemies li {
-  padding-top: 1rem;
-}
-
 /* Timeline */
 .timeline {
   list-style: none outside none;
@@ -975,10 +971,33 @@ dialog:target ~ * {
 .credits {
   text-align: right;
   padding: 0.5em;
-  line-height: 1em;
+  line-height: 2em;
   opacity: 0.75;
   transition: opacity 0.2s linear;
+  color: white;
 }
+
+.header {
+  text-align: left;
+  padding: 0.5em;
+  line-height: 2em;
+  opacity: 0.75;
+  transition: opacity 0.2s linear;
+  color: white;
+}
+
+.header img {
+  position: fixed;
+  width: 2em;
+  height: 2em;
+  padding: 0.1em;
+}
+
+.header p {
+  padding-left: 3em;
+  padding-top: 0.3em;
+}
+
 .credits:hover {
   opacity: 1;
 }
@@ -986,18 +1005,25 @@ dialog:target ~ * {
   .credits {
     display: none;
   }
+  .header img,
+  p {
+    display: none;
+  }
 }
 
 /* Hide header, reveal footer */
 header {
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   z-index: 1;
-  background: white;
-  top: 0;
+  background: rgba(209, 149, 38, 0.726);
+  top: 1;
   left: 0;
-  height: 2em;
+  height: 3em;
   width: 100%;
 }
+
 header + main {
   margin-top: 2em;
 }
@@ -1016,11 +1042,22 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: whitesmoke;
+  background: rgba(209, 149, 38, 0.726);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 1;
+}
+footer img {
+  max-width: 50%;
+  max-height: 50%;
+  border-radius: 15%;
+}
+footer a {
+  margin-top: 2rem;
+  color: black;
+  text-decoration: underline;
 }
 @media only screen and (max-width: 767px) {
   header {
