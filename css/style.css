@@ -298,13 +298,13 @@ article {
 }
 
 /**
-   * # Semantic UI - 2.4.2
-   * https://github.com/Semantic-Org/Semantic-UI
-   * https://www.semantic-ui.com/
-   * Copyright 2014 Contributors
-   * Released under the MIT license
-   * https://opensource.org/licenses/MIT
-   */
+ * # Semantic UI - 2.4.2
+ * https://github.com/Semantic-Org/Semantic-UI
+ * https://www.semantic-ui.com/
+ * Copyright 2014 Contributors
+ * Released under the MIT license
+ * https://opensource.org/licenses/MIT
+ */
 .grid {
   display: flex;
   flex-direction: row;
@@ -312,9 +312,9 @@ article {
   align-items: stretch;
   padding: 0;
   /**
-     * Temporary hack to be sure avatar
-     * is rendered on print preview
-     */
+   * Temporary hack to be sure avatar
+   * is rendered on print preview
+   */
   display: block !important;
 }
 .grid .grid {
@@ -971,7 +971,7 @@ dialog:target ~ * {
 .credits {
   text-align: right;
   padding: 0.5em;
-  line-height: 2em;
+  line-height: 1.8em;
   opacity: 0.75;
   transition: opacity 0.2s linear;
   color: white;
@@ -1005,10 +1005,6 @@ dialog:target ~ * {
   .credits {
     display: none;
   }
-  .header img,
-  p {
-    display: none;
-  }
 }
 
 /* Hide header, reveal footer */
@@ -1018,7 +1014,7 @@ header {
   justify-content: space-between;
   z-index: 1;
   background: rgba(209, 149, 38, 0.726);
-  top: 1;
+  top: 0;
   left: 0;
   height: 3em;
   width: 100%;
@@ -1038,7 +1034,6 @@ main:nth-last-child(3) {
 }
 footer {
   height: 50vh;
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -1090,7 +1085,7 @@ footer a {
 }
 
 main {
-  background: linear-gradient(-45deg, #ee7752, #a13434, #b4a734, #d6772a);
+  background: linear-gradient(-45deg, #f5e502, #3de058bd, #d48a295e, #eeff00d3);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
